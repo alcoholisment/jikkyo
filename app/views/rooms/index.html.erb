@@ -1,0 +1,16 @@
+<div class='main'>
+  <ul>
+    <% @rooms.each do |room| %>
+      <%= link_to room.name, room_path(room) %>
+    <% end %>
+  </ul>
+  <div class="create-room">
+    <%= form_with model:@room, url: rooms_path,  local: true do |f| %>
+
+    <%#<%= render 'shared/error_messages', model: f.object %>
+
+    <%= f.text_field :name, class:"rooms-text", id:"room-name", placeholder:"スレッド名、40文字まで", maxlength:"40" %>
+    <%= f.submit 'スレッド作成', class: 'form-submit' %>
+    <% end %>
+  </div>
+</div>
