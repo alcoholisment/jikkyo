@@ -17,6 +17,7 @@
 }
 .side-bar-bottom {
   height: 90px;
+  padding: 0 20px;
 }
 .chat {
   background-color: #ffffff;
