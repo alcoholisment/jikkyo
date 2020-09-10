@@ -1,0 +1,19 @@
+<div class="chat-header">
+    <div class="left-header">
+      <div class="header-title">
+        だいいちルーム
+      </div>
+  </div>
+</div>
+
+<div class="messages">
+  <%= render partial: 'message', collection: @messages %>
+</div>
+<div class="form">
+<%# form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
+  <div class="form-input">
+  <%= text_field :content, nil, data: { behavior: 'room_speaker' },class: 'form-message', placeholder: "コメント", maxlength: 200 %>
+    <%# text_field :content, data: { behavior: 'room_speaker' }, class: 'form-message', placeholder: 'コメント', maxlength: 200 %>
+  </div>
+<%# end %>
+</div>
