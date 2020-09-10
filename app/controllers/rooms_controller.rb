@@ -18,13 +18,13 @@ class RoomsController < ApplicationController
     if @room.save
       redirect_to root_path
     else
-      redirect_to root_path
+      render "new"
     end
   end
 
   private
 
   def room_params
-    params.permit(:name)
+    params.require(:room).permit(:name)
   end
 end
