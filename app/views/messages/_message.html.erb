@@ -1,3 +1,8 @@
 <div class='message'>
-  <p><%= message.content %></p>
+  <div class="message-content">
+    <%= message.content %>
+  </div>
+  <div class="message-date">
+    <%= l message.created_at %>
+  </div>
 </div>
