@@ -1,19 +1,21 @@
 <div class="chat-header">
     <div class="left-header">
       <div class="header-title">
-        だいいちルーム
+        <%= @room.name %>
       </div>
   </div>
 </div>
 
-<div class="messages">
-  <%= render partial: 'message', collection: @messages %>
+<div class="messages" id="messages">
+  <%= render @messages %>
 </div>
 <div class="form">
 <%# form_with model: [@room, @message], html: {class: "form"}, local: true do |f| %>
   <div class="form-input">
-  <%= text_field :content, nil, data: { behavior: 'room_speaker' },class: 'form-message', placeholder: "コメント", maxlength: 200 %>
+  <%= text_field_tag :content, nil, data: { behavior: 'room_speaker' }, class: 'form-message', placeholder: "コメント", maxlength: 200 %>
+  <%= hidden_field_tag :room_id, @room.id, data: { behavior: 'room_speaker' } %>
     <%# text_field :content, data: { behavior: 'room_speaker' }, class: 'form-message', placeholder: 'コメント', maxlength: 200 %>
   </div>
+
 <%# end %>
 </div>

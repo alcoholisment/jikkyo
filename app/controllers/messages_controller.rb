@@ -15,6 +15,10 @@ class MessagesController < ApplicationController
       render :index
     end
   end
+  
+  def show
+    @messages = Message.all
+  end
 
   private
 
