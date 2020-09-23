@@ -17,12 +17,14 @@ $(function() {
     },
 
     speak: function(message, room_id) {
+      $(messages).animate({scrollTop: $(messages)[0].scrollHeight})
       return this.perform('speak', {
         message: message,
         room_id: room_id
       });
     }
   });
+
 
   $(document).on('keypress', '[data-behavior~=room_speaker]', function(event) {
     if (event.keyCode === 13) {
