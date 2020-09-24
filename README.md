@@ -19,7 +19,7 @@ https://jikkyo-718.herokuapp.com/
 IPアドレスごとにコメントにIDの追加、レスポンシブデザイン、最後の投稿から一定時間時間経過でルーム自動削除などを実装したいと考えています。
 
 ## 開発環境
-- <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer">Ruby on Rails</a>
+- <a href="https://rubyonrails.org/" target="_blank">Ruby on Rails</a>
 - <a href="https://jquery.com/">jQuery</a>
 - <a href="https://jp.heroku.com/">Heroku</a>
 
