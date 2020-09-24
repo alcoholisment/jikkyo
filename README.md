@@ -19,9 +19,9 @@ https://jikkyo-718.herokuapp.com/
 IPアドレスごとにコメントにIDの追加、レスポンシブデザイン、最後の投稿から一定時間時間経過でルーム自動削除などを実装したいと考えています。
 
 ## 開発環境
-Ruby on Rails  
-jQuery  
-Heroku  
+- Ruby on Rails  
+- jQuery  
+- Heroku  
 
 ## DB設計
 
